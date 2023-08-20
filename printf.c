@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 	int i;
-	int len = 0;
+	int len = _strlen(format);
 	va_list list;
 
 	if (format == NULL)
@@ -23,25 +23,25 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				len += _putchar(va_arg(list, int));
+				_putchar(va_arg(list, int));
 				break;
 			case 's':
-				len += _puts(va_arg(list, char *));
+				_puts(va_arg(list, char *));
 				break;
 			case '%':
-				len += _putchar('%');
+				_putchar('%');
 				len--;
 				break;
 			case 'd':
-				len += print_number(va_arg(list, int));
+				print_number(va_arg(list, int));
 				break;
 			case 'i':
-				len += print_number(va_arg(list, int));
+				print_number(va_arg(list, int));
 				break;
 			}
 		}
 		else
-			len += _putchar(format[i]);
+			_putchar(format[i]);
 	}
 	va_end(list);
 	return (len);
