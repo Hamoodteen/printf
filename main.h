@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include "_putchar.c"
+#include "_puts.c"
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
