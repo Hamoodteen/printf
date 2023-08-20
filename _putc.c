@@ -7,7 +7,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putc(const char *c)
+int _putc(char c)
 {
 	return (write(1, &c, 1));
 }
@@ -16,7 +16,7 @@ int _putc(const char *c)
  * @str: pointer to string to print
  * Return: void
  */
-void _puts(const char *str)
+void _puts(char *str)
 {
 	write(1, str, strlen(str));
 }
