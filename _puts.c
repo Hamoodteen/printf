@@ -5,7 +5,7 @@
  * @str: pointer to string to print
  * Return: none
  */
-void _strprint(const char *str)
+void _puts(const char *str)
 {
 	write(1, str, _strlen(str));
 }
