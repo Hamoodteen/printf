@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 
-	return (strlen(format) + 1);
+	return (strlen(format));
 }
 /**
  * main - call printf
