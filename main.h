@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "_putchar.c"
 #include <string.h>
+#include <stdarg.h>
 
 int _putchar(char c);
 void _puts(const char *);
