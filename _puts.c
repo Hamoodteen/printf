@@ -1,5 +1,6 @@
 #include <string.h>
 #include <unistd.h>
+#include "_strlen.c"
 
 /**
  * _puts - prints a string
