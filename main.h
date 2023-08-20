@@ -5,6 +5,9 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <limits.h>
+#include "_putchar.c"
+#include "_puts.c"
 
 int _putchar(char c);
 int _puts(char *c);
