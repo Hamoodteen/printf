@@ -14,5 +14,4 @@ int _printf(const char *format, ...)
 	va_end(args);
 	_puts(format);
 	return (strlen(format));
-	
 }
