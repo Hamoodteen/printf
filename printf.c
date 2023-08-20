@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				_putchar(va_arg(args, int));
+				_putc(va_arg(args, int));
 				break;
 			case 's':
 				_puts(va_arg(args, const char *));
