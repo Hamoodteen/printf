@@ -3,7 +3,7 @@
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
- * RReturn: void
+ * Return: void
  */
 void _puts(const char *c)
 {
