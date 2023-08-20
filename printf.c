@@ -45,7 +45,8 @@ int main(void)
 	str = "bbb";
 
 	_printf("s%casa\n", l);
-	_printf("s%sasa", str);
+	_printf("s%sasa\n", str);
+	_printf("s%%asa\n");
 
 	return (0);
 }
