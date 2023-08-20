@@ -14,9 +14,9 @@ int _putchar(char c)
 /**
  * _puts - prints a string
  * @str: pointer to string to print
- * Return: void
+ * Return: int
  */
-void _puts(const char *str)
+int _puts(const char *str)
 {
-	write(1, str, strlen(str));
+	return write(1, str, strlen(str));
 }
