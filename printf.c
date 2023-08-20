@@ -26,6 +26,9 @@ int _printf(const char *format, ...)
 			case 's':
 				_puts(va_arg(args, const char *));
 				break;
+			case 'd':
+				_putc(va_arg(args, int));
+				break;
 			case '%':
 				;
 				break;
