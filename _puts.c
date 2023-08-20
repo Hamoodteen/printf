@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - do something
  * @s: int or char
