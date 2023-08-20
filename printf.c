@@ -9,7 +9,6 @@
 int _printf(const char *format, ...)
 {
 	int i;
-	char *strng;
 	va_list list;
 
 	va_start(list, format);
@@ -25,10 +24,7 @@ int _printf(const char *format, ...)
 					_putchar(va_arg(list, int));
 					break;
 				case 's':
-					strng = va_arg(list, char *);
-					if (!strng)
-						strng = "(nil)";
-					_puts(strng);
+					_puts(va_arg(list, char *));
 					break;
 				case '%':
 					_putchar('%');
