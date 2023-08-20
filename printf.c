@@ -6,15 +6,14 @@
  * @...: args
  * Return: int
 */
-/*
 int _printf(const char *format, ...)
 {
 	_putchar('c');
 
 	return (strlen(format));
 }
-*/
-void main(void)
+int main(void)
 {
 	_putchar('c');
+	return (0);
 }
