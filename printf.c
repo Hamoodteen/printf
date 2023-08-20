@@ -12,8 +12,9 @@ int _printf(const char *format, ...)
 	int len;
 	va_list list;
 
+	if (format == NULL)
+		return (-1);
 	va_start(list, format);
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -41,25 +42,11 @@ int _printf(const char *format, ...)
 }
 int main(void)
 {
-    int len;
-    int len2;
-
-    len = _printf("Let's try to printf a simple sentence.hhh\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-
     _printf("Character:[%c]hhh\n", 'H');
     printf("Character:[%c]\n\n", 'H');
 
-    _printf("String:[%s]hhh\n");
-    printf("String:[%s]\n\n");
-
-    len = _printf("Percent:[%%]hhh\n");
-    len2 = printf("Percent:[%%]\n");
-
-    _printf("Len:[%d]hhh\n", len);
-    printf("Len:[%d]\n", len2);
-
-
+    _printf("hhhString:[%s]hhh\n");
+    printf("fffString:[%s]fff\n\n");
 
     return (0);
 }
