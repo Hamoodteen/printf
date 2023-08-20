@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -24,6 +25,7 @@ int _printf(const char *format, ...)
 	va_end(args);
 	_put(format);
 	return (strlen(format));
+	
 }
 int main(void)
 {
