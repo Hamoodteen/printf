@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 					_puts(strng);
 					break;
 				case 'd':
-					_putchar(va_arg(list, int));
+					_puts(va_arg(list, int));
 					break;
 				case '%':
 					_putchar('%');
