@@ -6,13 +6,15 @@
  * @...: args
  * Return: int
 */
+/*
 int _printf(const char *format, ...)
 {
-	va_list args;
+	_putchar('c');
 
-	va_start(args, format);
-	va_end(args);
-	_puts(format);
 	return (strlen(format));
-	
+}
+*/
+void main(void)
+{
+	_putchar('c');
 }
