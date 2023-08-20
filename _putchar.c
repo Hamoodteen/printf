@@ -14,7 +14,7 @@ int _putchar(char c)
 /**
  * _puts - prints a string
  * @str: pointer to string to print
- * Return: int
+ * Return: void
  */
 void _puts(const char *str)
 {
