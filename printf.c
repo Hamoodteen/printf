@@ -8,12 +8,6 @@
 */
 int _printf(const char *format, ...)
 {
-	_putchar('c');
-
+	_puts(format);
 	return (strlen(format));
-}
-int main(void)
-{
-	_putchar('c');
-	return (0);
 }
