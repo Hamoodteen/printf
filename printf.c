@@ -17,9 +17,11 @@ int _printf(const char *format, ...)
 	ret = 0;
 	while (format[i])
 	{
-		if (format[i] == '%') {
+		if (format[i] == '%')
+		{
 			i++;
-			switch (format[i]) {
+			switch (format[i])
+			{
 			case 'c':
 				ret += _putchar(va_arg(args, int));
 				break;
