@@ -38,15 +38,3 @@ int _printf(const char *format, ...)
 
 	return (_strlen(format));
 }
-int main(void)
-{
-	char l = 'b';
-	char *str;
-	str = "bbb";
-
-	_printf("s%casa\n", l);
-	_printf("s%sasa\n", str);
-	_printf("s%%asa\n");
-
-	return (0);
-}
