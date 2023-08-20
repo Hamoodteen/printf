@@ -30,6 +30,9 @@ int _printf(const char *format, ...)
 						strng = "(nil)";
 					_puts(strng);
 					break;
+				case '%':
+					_putchar('%');
+					break;
 			}
 		}
 		else
