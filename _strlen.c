@@ -5,7 +5,7 @@
  * @s: int or char
  * Return: some thing
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int len = 0;
 	int i;

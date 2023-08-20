@@ -8,5 +8,5 @@
  */
 int _puts(char *c)
 {
-	return (write(1, &c[0], strlen(c)));
+	return (write(1, &c[0], _strlen(c)));
 }
