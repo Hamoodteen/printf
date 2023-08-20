@@ -15,8 +15,3 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (strlen(format));
 }
-int main(void)
-{
-	_printf("asd");
-	return (0);
-}
