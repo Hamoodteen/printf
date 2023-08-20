@@ -12,11 +12,11 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	va_end(args);
-	
 	_putchar(format[0]);
 	return (strlen(format));
 }
-void main(void)
+int main(void)
 {
 	_printf("sasa");
+	return (0);
 }
