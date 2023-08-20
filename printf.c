@@ -25,8 +25,3 @@ int _printf(const char *format, ...)
 	_put(format);
 	return (strlen(format));
 }
-int main(void)
-{
-	_printf("sasa");
-	return (0);
-}
