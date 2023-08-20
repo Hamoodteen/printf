@@ -9,6 +9,7 @@
 int _printf(const char *format, ...)
 {
 	int i;
+	int len;
 	va_list list;
 
 	va_start(list, format);
@@ -21,22 +22,22 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					_putchar(va_arg(list, int));
+					len += _putchar(va_arg(list, int));
 					break;
 				case 's':
-					_puts(va_arg(list, char *));
+					len += _puts(va_arg(list, char *));
 					break;
 				case '%':
-					_putchar('%');
+					len += _putchar('%');
 					break;
 			}
 		}
 		else
-			_putchar(format[i]);
+			len += _putchar(format[i]);
 	}
 	va_end(list);
 
-	return (_strlen(format));
+	return (len);
 }
 int main(void)
 {
