@@ -2,6 +2,7 @@
 #define _HEADER_
 
 #include <stdio.h>
+#include <unistd.h>
 #include <stdarg.h>
 #include <string.h>
 
