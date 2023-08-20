@@ -30,12 +30,6 @@ int _printf(const char *format, ...)
 						strng = "(nil)";
 					_puts(strng);
 					break;
-				case 'd':
-					_putchar(va_arg(list, int));
-					break;
-				case '%':
-					_putchar('%');
-					break;
 			}
 		}
 		else
@@ -44,4 +38,15 @@ int _printf(const char *format, ...)
 	va_end(list);
 
 	return (_strlen(format));
+}
+int main(void)
+{
+	char l = 'b';
+	char *str;
+	str = "bbb";
+
+	_printf("s%casa\n", l);
+	_printf("s%sasa", str);
+
+	return (0);
 }
