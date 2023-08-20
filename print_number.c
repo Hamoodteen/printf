@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-int print_number(int n);
-=======
-
 #include "main.h"
 /**
  * print_number - f
@@ -36,4 +32,3 @@ int print_number(int n)
 	}
 	return (cnt);
 }
->>>>>>> f9ca8d4d56f692409e7621258b8e06ae0edd5694
