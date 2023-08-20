@@ -32,6 +32,7 @@ int _printf(const char *format, ...)
 					break;
 				case 'd':
 					len += print_number(va_arg(list, int));
+					break;
 			}
 		}
 		else
