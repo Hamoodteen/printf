@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (_strlen(format));
 }
-int main(void
+int main(void)
 {
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
