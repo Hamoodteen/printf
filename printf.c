@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 				case '%':
 					len += _putchar('%');
 					break;
+				case 'd':
+					len += print_number(va_arg(list, int));
 			}
 		}
 		else
