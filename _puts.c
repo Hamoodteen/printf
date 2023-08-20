@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- * Return: void
+ * _strprint - prints a string
+ * @str: pointer to string to print
+ * Return: none
  */
-void _puts(const char *c)
+void _strprint(char *str)
 {
-	write(1, c, strlen(c));
+	write(1, str, _strlen(str));
 }
