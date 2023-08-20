@@ -22,10 +22,10 @@ int print_number(int n)
 	{
 		divisor *= 10;
 		tmp /= 10;
-		cnt++;
 	}
 	while (divisor > 0)
 	{
+		cnt++;
 		_putchar('0' + n / divisor);
 		n %= divisor;
 		divisor /= 10;
