@@ -9,5 +9,5 @@
  */
 void _puts(const char *c)
 {
-	(write(1, c, strlen(c)));
+	write(1, c, strlen(c));
 }
