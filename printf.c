@@ -39,8 +39,3 @@ int _printf(const char *format, ...)
 
 	return (strlen(format));
 }
-/**
- * main - call printf
- *
- * Return: int
-*/
