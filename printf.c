@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printf - f
  * @format: char
@@ -11,5 +12,10 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	va_end(args);
+	_putchar(format[0]);
 	return (strlen(format));
+}
+void main(void)
+{
+	_printf("sasa");
 }
