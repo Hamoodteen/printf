@@ -30,6 +30,12 @@ int _printf(const char *format, ...)
 						strng = "(nil)";
 					_puts(strng);
 					break;
+				case 'd':
+					_putchar(va_arg(args, int));
+					break;
+				case '%':
+					_putchar('%');
+					break;
 			}
 		}
 		else
