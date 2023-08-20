@@ -7,5 +7,5 @@
  */
 void _puts(const char *str)
 {
-	write(1, str, _strlen(str));
+	write(1, str, strlen(str));
 }
