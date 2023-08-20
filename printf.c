@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 					_putchar(va_arg(list, int));
 					break;
 				case 's':
-					_puts(va_arg(list, char *););
+					_puts(va_arg(list, char *));
 					break;
 				case '%':
 					_putchar('%');
