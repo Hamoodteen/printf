@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	va_end(args);
+	
 	_putchar(format[0]);
 	return (strlen(format));
 }
