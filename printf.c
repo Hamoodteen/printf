@@ -26,13 +26,16 @@ int _printf(const char *format, ...)
 			case 's':
 				_puts(va_arg(args, const char *));
 				break;
+			case '%':
+				;
+				break;
 			default:
 				break;
 			}
 		}
 		else
 		{
-			_puts(format);
+			_puts(va_arg(args, const char *));
 		}
 		i++;
 	}
