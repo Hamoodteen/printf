@@ -3,6 +3,7 @@
 
 #include "_putchar.c"
 #include "_puts.c"
+#include "_strlen.c"
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>

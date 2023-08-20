@@ -37,5 +37,21 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 
-	return (strlen(format));
+	return (_strlen(format));
+}
+/**
+ * main - call printf
+ *
+ * Return: int
+*/
+int main(void)
+{
+	char l = 'b';
+	char *str;
+	str = "bbb";
+
+	_printf("s%casa\n", l);
+	_printf("s%sasa", str);
+
+	return (0);
 }
