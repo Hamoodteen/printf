@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	va_end(args);
-	_putchar(format[0]);
+	write(1, format, strlen(format));
 	return (strlen(format));
 }
 int main(void)
