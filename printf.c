@@ -30,9 +30,6 @@ int _printf(const char *format, ...)
 						strng = "(nil)";
 					_puts(strng);
 					break;
-				case 'd':
-					_puts(va_arg(list, int));
-					break;
 				case '%':
 					_putchar('%');
 					break;
