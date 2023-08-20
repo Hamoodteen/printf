@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <string.h>
 
+void _puts(const char *c);
 int _printf(const char *format, ...);
 
 #endif
