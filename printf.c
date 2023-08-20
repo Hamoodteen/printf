@@ -9,7 +9,6 @@
 int _printf(const char *format, ...)
 {
 	int i;
-	char *strng;
 	va_list list;
 
 	va_start(list, format);
