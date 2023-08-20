@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 				_putchar(va_arg(args, int));
 				break;
 			case 's':
-				_puts(format);
+				_puts(va_arg(args, const char *));
 				break;
 			default:
 				break;
