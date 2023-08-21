@@ -10,8 +10,7 @@ int _printf(const char *format, ...)
 {
 	int i;
 	int len = 0;
-	unsigned long int b;
-	unsigned int u;
+	unsigned long int bu;
 	long int o;
 	char *x;
 	va_list list;
@@ -42,11 +41,11 @@ int _printf(const char *format, ...)
 				len += print_number(va_arg(list, int));
 				break;
 			case 'b':
-				b = binary(va_arg(list, unsigned long int));
+				bu = binary(va_arg(list, unsigned long int));
 				len += print_number(b);
 				break;
 			case 'u':
-				u = va_arg(list, unsigned int);
+				bu = va_arg(list, unsigned int);
 				len += print_number(u);
 				break;
 			case 'o':
