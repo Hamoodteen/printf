@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 {
 	int i;
 	int len = 0;
-	long int b;
+	unsigned long int b;
 	va_list list;
 
 	if (format == NULL)
@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 				len += print_number(va_arg(list, int));
 				break;
 			case 'b':
-				b = binary(va_arg(list, long int));
+				b = binary(va_arg(list, unsigned long int));
 				len += print_number(b);
 				break;
 			}

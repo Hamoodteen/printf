@@ -4,7 +4,7 @@
  * @n: int
  * Return: int
 */
-long int print_number(long int n)
+int print_number(unsigned long int n)
 {
 	long int divisor;
 	long int tmp;
