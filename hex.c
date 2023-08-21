@@ -10,7 +10,7 @@ char *rev(char *str)
 	int j;
 	char temp;
 
-	for	(i = 0, j = strlen(str) - 1; i < j; i++, j--)
+	for	(i = 0, j = _strlen(str) - 1; i < j; i++, j--)
 	{
 		temp = str[i];
 		str[i] = str[j];
@@ -44,7 +44,7 @@ char *hex(unsigned int n)
 	return (rev(x));
 }
 /**
- * hex - f
+ * HEX - f
  * @n: int
  * Return: char
 */
