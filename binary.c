@@ -17,5 +17,5 @@ int binary(int n)
 		f *= 10;
 		n /= 2;
 	}
-	return bin;
+	return (bin);
 }
