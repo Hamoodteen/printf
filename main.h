@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -12,8 +13,7 @@ int _puts(char *c);
 int _printf(const char *format, ...);
 int _strlen(const char *s);
 int print_number(long int n);
-void octal(int n, char *octal);
-void reverse(char *str);
+long int octal(long int n);
 long int binary(unsigned long int n);
 
 #endif

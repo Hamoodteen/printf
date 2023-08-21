@@ -2,39 +2,20 @@
 /**
  * octal - f
  * @n: int
- * @octal: char
- * Return: void
+ * Return: oct
 */
-void octal(int n, char *octal)
+long int octal(long int n)
 {
-	int i = 0;
+	long int oct = 0;
+	long int f = 1;
+	long int rem;
 
-	while (n)
+	while (n != 0)
 	{
-	octal[i++] = n % 8 + '0';
-	n /= 8;
+		rem = n % 8;
+		oct += (rem * f);
+		n /= 8;
+		f *= 10;
 	}
-	octal[i] = '\0';
-	reverse(octal);
-}
-/**
- * reverse - f
- * @str: char
- * Return: void
-*/
-void reverse(char *str)
-{
-	int i, j;
-	char temp;
-
-	i = 0;
-	j = strlen(str) - 1;
-	while (i < j)
-	{
-	temp = str[i];
-	str[i] = str[j];
-	str[j] = temp;
-	i++;
-	j--;
-	}
+	return (oct);
 }

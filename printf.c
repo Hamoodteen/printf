@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 	int len = 0;
 	unsigned long int b;
 	unsigned int u;
+	long int o;
 	va_list list;
 
 	if (format == NULL)
@@ -47,6 +48,10 @@ int _printf(const char *format, ...)
 			case 'u':
 				u = va_arg(list, unsigned int);
 				len += print_number(u);
+				break;
+			case 'o':
+				o = octal(va_arg(list, long int));
+				len += print_number(o);
 				break;
 			}
 		}

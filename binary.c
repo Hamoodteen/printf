@@ -2,12 +2,12 @@
 /**
  * binary - f
  * @n: int
- * Return: int
+ * Return: bin
 */
 long int binary(unsigned long int n)
 {
-	unsigned long int f = 1;
 	unsigned long int bin = 0;
+	unsigned long int f = 1;
 	unsigned long int rem;
 
 	while (n != 0)
