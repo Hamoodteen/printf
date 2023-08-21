@@ -38,6 +38,9 @@ int _printf(const char *format, ...)
 			case 'i':
 				len += print_number(va_arg(list, int));
 				break;
+			case 'b':
+				len += print_number(binary(va_arg(list, int)));
+				break;
 			}
 		}
 		else

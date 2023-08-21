@@ -14,5 +14,6 @@ int _strlen(const char *s);
 int print_number(int n);
 void octal(int n, char *octal);
 void reverse(char *str);
+int binary(int n);
 
 #endif
