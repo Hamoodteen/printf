@@ -43,6 +43,9 @@ int _printf(const char *format, ...)
 				b = binary(va_arg(list, unsigned long int));
 				len += print_number(b);
 				break;
+			case 'u':
+				len += print_number(va_arg(list, unsigned int));
+				break;
 			}
 		}
 		else
