@@ -14,7 +14,6 @@ int _printf(const char *format, ...)
 	long int o;
 	char *x;
 	char *p;
-	char *j;
 	va_list list;
 
 	if (format == NULL)
@@ -63,8 +62,8 @@ int _printf(const char *format, ...)
 				len += _puts(x);
 				break;
 			case 'p':
-				j = (char *)va_arg(list, void *);
-				p = &*j;
+				x = (char *)va_arg(list, void *);
+				p = &*x;
 				len += _puts(p);
 				break;
 			}
