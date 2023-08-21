@@ -4,10 +4,10 @@
  * @n: int
  * Return: int
 */
-int print_number(int n)
+long int print_number(long int n)
 {
-	int divisor;
-	int tmp;
+	long int divisor;
+	long int tmp;
 	int cnt = 0;
 
 	if (n < 0)

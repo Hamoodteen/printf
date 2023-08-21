@@ -4,11 +4,11 @@
  * @n: int
  * Return: int
 */
-int binary(int n)
+long int binary(long int n)
 {
-	int f = 1;
-	int bin = 0;
-	int rem;
+	long int f = 1;
+	long int bin = 0;
+	long int rem;
 
 	while (n != 0)
 	{
