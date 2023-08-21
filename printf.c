@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 				len += print_number(va_arg(list, int));
 				break;
 			case 'b':
-				len += print_number(binary(va_arg(list, int)));
+				len += print_number(binary(va_arg(list, unsigned int)));
 				break;
 			}
 		}
