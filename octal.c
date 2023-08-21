@@ -4,11 +4,11 @@
  * @n: int
  * Return: oct
 */
-long int octal(long int n)
+long int octal(unsigned long int n)
 {
-	long int oct = 0;
-	long int f = 1;
-	long int rem;
+	unsigned long int oct = 0;
+	unsigned long int f = 1;
+	unsigned long int rem;
 
 	while (n != 0)
 	{
