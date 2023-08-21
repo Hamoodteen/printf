@@ -51,9 +51,3 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (len);
 }
-int main(void)
-{
-	long int i = 99999;
-	_printf("%b", i);
-	return (0);
-}
