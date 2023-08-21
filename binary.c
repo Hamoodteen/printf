@@ -6,15 +6,16 @@
 */
 int binary(int n)
 {
-	int i;
+	int f = 1;
 	int bin = 0;
 	int rem;
 
-	for (i = 0; n > 0; i++)
+	while (n != 0)
 	{
 		rem = n % 2;
+		bin += (rem * f);
+		f *= 10;
 		n /= 2;
-		bin += rem * (1 << i);
 	}
 	return bin;
 }
