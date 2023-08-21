@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 	int i;
 	int len = 0;
 	unsigned long int b;
+	unsigned int u;
 	va_list list;
 
 	if (format == NULL)
@@ -44,7 +45,8 @@ int _printf(const char *format, ...)
 				len += print_number(b);
 				break;
 			case 'u':
-				len += print_number(va_arg(list, unsigned int));
+				u = va_arg(list, unsigned int);
+				len += print_number(u);
 				break;
 			}
 		}
