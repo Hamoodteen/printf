@@ -42,11 +42,11 @@ int _printf(const char *format, ...)
 				break;
 			case 'b':
 				bu = binary(va_arg(list, unsigned long int));
-				len += print_number(b);
+				len += print_number(bu);
 				break;
 			case 'u':
 				bu = va_arg(list, unsigned int);
-				len += print_number(u);
+				len += print_number(bu);
 				break;
 			case 'o':
 				o = octal(va_arg(list, unsigned long int));
