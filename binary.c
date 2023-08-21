@@ -4,11 +4,11 @@
  * @n: int
  * Return: int
 */
-long int binary(long int n)
+long int binary(unsigned long int n)
 {
-	long int f = 1;
-	long int bin = 0;
-	long int rem;
+	unsigned long int f = 1;
+	unsigned long int bin = 0;
+	unsigned long int rem;
 
 	while (n != 0)
 	{
