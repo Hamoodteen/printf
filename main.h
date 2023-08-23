@@ -7,9 +7,6 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <limits.h>
-#include "myFunctions1.c"
-#include "myFunctions2.c"
-#include "myFunctions3.c"
 
 int _putchar(char c);
 int _puts(char *c);
