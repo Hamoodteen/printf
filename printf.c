@@ -85,3 +85,18 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (len);
 }
+int main(void)
+{
+	int len, len2;
+
+	len = _printf("%K\n");
+	len2 = printf("%K\n");
+	fflush(stdout);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+		return (1);
+	}
+	return (0);
+}
