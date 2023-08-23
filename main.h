@@ -15,7 +15,7 @@ int _printf(const char *format, ...);
 int _strlen(const char *s);
 int print_number(long int n);
 long int octal(unsigned long int n);
-long int print_binary(unsigned long int n);
+int print_binary(unsigned long int n);
 char *rev(char *str);
 char *hex(unsigned int n);
 char *HEX(unsigned int n);
