@@ -92,7 +92,7 @@ char *HEX(unsigned int n)
 }
 
 /**
- * binary - f
+ * print_binary - f
  * @n: int
  * Return: bin
 */

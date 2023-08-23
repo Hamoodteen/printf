@@ -70,6 +70,9 @@ int _printf(const char *format, ...)
 			case 'r':
 				len += print_rev(va_arg(list, char *));
 				break;
+			case 'R':
+				len += printf_rot13(list);
+				break;
 			}
 		}
 		else
