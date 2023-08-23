@@ -73,6 +73,10 @@ int _printf(const char *format, ...)
 			case 'R':
 				len += printf_rot13(list);
 				break;
+			default:
+				len += _putchar('%');
+				len += _putchar(format[i]);
+				break;
 			}
 		}
 		else
