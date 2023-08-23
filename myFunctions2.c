@@ -96,12 +96,12 @@ char *HEX(unsigned int n)
  * @n: int
  * Return: bin
 */
-int print_binary(unsigned int n)
+long int print_binary(unsigned int n)
 {
-	unsigned int bin = 0;
-	unsigned int f = 1;
-	unsigned int rem;
-	unsigned int count = 0;
+	unsigned long int bin = 0;
+	unsigned long int f = 1;
+	unsigned long int rem;
+	unsigned long int count = 0;
 
 	if (n == 0)
 	{
