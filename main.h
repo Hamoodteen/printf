@@ -19,5 +19,6 @@ int print_binary(unsigned int n);
 char *rev(char *str);
 char *hex(unsigned int n);
 char *HEX(unsigned int n);
+int print_rev(char *s);
 
 #endif

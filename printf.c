@@ -67,6 +67,9 @@ int _printf(const char *format, ...)
 				p = &*x;
 				len += _puts(p);
 				break;
+			case 'r':
+				len += print_rev(va_arg(list, char *));
+				break;
 			}
 		}
 		else
